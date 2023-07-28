@@ -13,6 +13,7 @@
 		21B0C2172A737F9C0070E3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B0C2152A737F9C0070E3F4 /* Main.storyboard */; };
 		21B0C2192A737F9D0070E3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B0C2182A737F9D0070E3F4 /* Assets.xcassets */; };
 		21B0C21C2A737F9D0070E3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B0C21A2A737F9D0070E3F4 /* LaunchScreen.storyboard */; };
+		A1FA9984E95DD7B0775BE144 /* Pods_scrollView_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2942EDAFA1A51D80684594CF /* Pods_scrollView_Practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		21B0C2182A737F9D0070E3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21B0C21B2A737F9D0070E3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21B0C21D2A737F9D0070E3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2942EDAFA1A51D80684594CF /* Pods_scrollView_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrollView_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE1321BBD5ADD27B3F7F314 /* Pods-scrollView_Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollView_Practice.release.xcconfig"; path = "Target Support Files/Pods-scrollView_Practice/Pods-scrollView_Practice.release.xcconfig"; sourceTree = "<group>"; };
+		B669B3EF11D3759E0B7A6569 /* Pods-scrollView_Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollView_Practice.debug.xcconfig"; path = "Target Support Files/Pods-scrollView_Practice/Pods-scrollView_Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FA9984E95DD7B0775BE144 /* Pods_scrollView_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				21B0C20E2A737F9C0070E3F4 /* scrollView_Practice */,
 				21B0C20D2A737F9C0070E3F4 /* Products */,
+				EEE9E1F5DC07741FAF2A9013 /* Pods */,
+				EECCE9559CA97B522FE772DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = scrollView_Practice;
 			sourceTree = "<group>";
 		};
+		EECCE9559CA97B522FE772DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2942EDAFA1A51D80684594CF /* Pods_scrollView_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEE9E1F5DC07741FAF2A9013 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B669B3EF11D3759E0B7A6569 /* Pods-scrollView_Practice.debug.xcconfig */,
+				4BE1321BBD5ADD27B3F7F314 /* Pods-scrollView_Practice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21B0C2202A737F9D0070E3F4 /* Build configuration list for PBXNativeTarget "scrollView_Practice" */;
 			buildPhases = (
+				4D4E199EEC01D49A470CA556 /* [CP] Check Pods Manifest.lock */,
 				21B0C2082A737F9C0070E3F4 /* Sources */,
 				21B0C2092A737F9C0070E3F4 /* Frameworks */,
 				21B0C20A2A737F9C0070E3F4 /* Resources */,
+				2D8E3279915CD89F112D2D76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D8E3279915CD89F112D2D76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrollView_Practice/Pods-scrollView_Practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrollView_Practice/Pods-scrollView_Practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scrollView_Practice/Pods-scrollView_Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4E199EEC01D49A470CA556 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scrollView_Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21B0C2082A737F9C0070E3F4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		21B0C2212A737F9D0070E3F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B669B3EF11D3759E0B7A6569 /* Pods-scrollView_Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		21B0C2222A737F9D0070E3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE1321BBD5ADD27B3F7F314 /* Pods-scrollView_Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
