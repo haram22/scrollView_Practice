@@ -45,7 +45,6 @@ class ViewController: UIViewController {
             make.bottom.equalToSuperview().inset(50
             )
         }
-        // Do any additional setup after loading the view.
     }
 
 
